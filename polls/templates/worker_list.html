@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Worker List</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>name</th>
+          <th>publisher</th>
+          <th>page</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for worker in books %}
+        <tr>
+          <td>{{worker.name}}</td>
+          <td>{{worker.publisher}}</td>
+          <td>{{worker.page}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
