@@ -17,3 +17,6 @@ def scrape_ocn():
     scrape(root,"mvno/ocn/scrape.config")
     backup(root+"/mvno/ocn/tmp",root+"/mvno/ocn/current")
     postprocess()
+
+if __name__=="__main__":
+    scrape_ocn()
