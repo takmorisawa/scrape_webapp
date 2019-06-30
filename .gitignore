@@ -1,3 +1,6 @@
 __pycache__
 db.sqlite3
 test
+.DS_Store
+polls/info.log
+info.log

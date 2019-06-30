@@ -6,5 +6,5 @@ import polls.views as manager_view
 
 urlpatterns=[
     path("",views.index,name="index"),
-    url(r'^worker_list/', manager_view.WorkerListView.as_view())
+    url(r'^ocn/', manager_view.WorkerListView.as_view())
 ]

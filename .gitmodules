@@ -1,0 +1,3 @@
+[submodule "supported_devices"]
+	path = supported_devices
+	url = https://github.com/takmorisawa/supported_devices

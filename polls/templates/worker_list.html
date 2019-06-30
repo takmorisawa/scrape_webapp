@@ -12,17 +12,17 @@
     <table>
       <thead>
         <tr>
+          <th>id</th>
+          <th>maker</th>
           <th>name</th>
-          <th>publisher</th>
-          <th>page</th>
         </tr>
       </thead>
       <tbody>
-        {% for worker in books %}
+        {% for worker in ocn %}
         <tr>
+          <td>{{worker.id}}</td>
+          <td>{{worker.maker}}</td>
           <td>{{worker.name}}</td>
-          <td>{{worker.publisher}}</td>
-          <td>{{worker.page}}</td>
         </tr>
         {% endfor %}
       </tbody>
