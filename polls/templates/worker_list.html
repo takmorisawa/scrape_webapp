@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
@@ -7,6 +8,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Worker List</title>
+
+    <link rel="shortcut icon" type="../keni80_html_standard_turquoise_201906301608/image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="../keni80_html_standard_turquoise_201906301608/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="../keni80_html_standard_turquoise_201906301608/images/apple-touch-icon.png">
+    {% block extrahead %}
+      <link href="{% static 'keni80_html_standard_turquoise_201906301608/base.css' %}" rel="stylesheet">
+      <link rel="icon" href="keni80_html_standard_turquoise_201906301608/images/apple-touch-icon.png">
+      <link rel="stylesheet" href="keni80_html_standard_turquoise_201906301608/advanced.css">
+      <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    {% endblock %}
   </head>
   <body>
     <table>

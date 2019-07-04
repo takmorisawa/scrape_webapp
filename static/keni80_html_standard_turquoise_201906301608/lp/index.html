@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja" class="col1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>全画面表示の設置例 | サイトタイトル</title>
+<meta name="description" content="全画面表示のサンプルページです。">
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="../images/apple-touch-icon.png">
+<link rel="icon" href="../images/apple-touch-icon.png">
+
+<link rel="stylesheet" href="../base.css">
+<link rel="stylesheet" href="../advanced.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<style>
+	.keni-mv_bg .keni-mv_outer{ background-image: url(../images/mv_lp.jpg); }
+</style>
+</head>
+
+
+<body class="page keni-lp no-gn">
+
+
+<div id="top" class="keni-container">
+
+
+<!--▼▼ ヘッダー ▼▼-->
+<div class="keni-header_wrap">
+	<div class="keni-header_outer">
+
+		<header class="keni-header keni-header_col1">
+			<div class="keni-header_inner">
+
+<p class="site-title"><a href="../"><span>WEBSITE</span> LOGO</a></p><!--サイトタイトル-->
+
+			</div><!--keni-header_inner-->
+		</header><!--keni-header-->
+
+	</div><!--keni-header_outer-->
+</div><!--keni-header_wrap-->
+<!--▲▲ ヘッダー ▲▲-->
+
+
+<!--▼▼ メインビジュアル ▼▼-->
+<div class="keni-mv_wrap keni-mv_bg keni-mv_wide">
+	<div class="keni-mv_outer">
+
+<div class="catch-area catch-area_c">
+<div class="catch-area_inner">
+<p class="catch_main">キャッチコピーが入ります。キャッチコピーが入ります。</p>
+<p class="catch_sub">サブコピーが入ります。サブコピーが入ります。サブコピーが入ります。サブコピーが入ります。</p>
+<div class="keni-mv_btn"><a href="#main"><span class="icon_arrow_s_down"></span></a></div>
+</div>
+</div>
+
+	</div>
+</div>
+<!--▲▲ メインビジュアル ▲▲-->
+
+
+
+<div class="keni-main_wrap">
+	<div class="keni-main_outer">
+	
+
+		<!--▼▼ メインコンテンツ ▼▼-->
+		<main id="main" class="keni-main">
+			<div class="keni-main_inner">
+				
+
+<div class="keni-section_wrap">
+	<section class="keni-section">
+
+<h1>全画面表示の設置例</h1>
+<p>メイン画像を全画面表示にできます。<br>
+ヘッダーやグローバルメニューがある場合、それらのスペースを除く部分で全画面になります。</p>
+<div class="al-c m20">
+<a href="../" class="btn dir-arw_l btn_style01"><span class="icon_arrow_s_left"></span>トップページに戻る</a>
+</div>
+
+	</section><!--keni-section-->
+</div>
+
+			</div><!--keni-main_inner-->
+		</main><!--keni-main-->
+		<!--▲▲ メインコンテンツ ▲▲-->
+
+	</div><!--keni-main_outer-->
+</div><!--keni-main_wrap-->
+
+
+<!--▼▼ footer ▼▼-->
+<footer class="keni-footer_wrap">
+
+
+	<div class="keni-copyright_wrap">
+		<div class="keni-copyright">
+
+<small>&copy; 2018 サイトタイトル</small>
+
+		</div><!--keni-copyright_wrap-->
+	</div><!--keni-copyright_wrap-->
+
+
+</footer><!--keni-footer_wrap-->
+<!--▲▲ footer ▲▲-->
+
+
+</div><!--keni-container-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+<script src="../utility.js" defer></script>
+<script>
+	var cb = function() {
+	var advanced_css = document.createElement('link'); advanced_css.rel = 'stylesheet';
+	advanced_css.href = '../advanced.css';
+	var insert_advanced_css = document.getElementsByTagName('head')[0]; insert_advanced_css.parentNode.insertBefore(advanced_css, insert_advanced_css);
+
+	var fa_css = document.createElement('link'); fa_css.rel = 'stylesheet';
+	fa_css.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+	var insert_fa_css = document.getElementsByTagName('head')[0]; insert_fa_css.parentNode.insertBefore(fa_css, insert_fa_css);
+};
+var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+	webkitRequestAnimationFrame || msRequestAnimationFrame;
+if (raf) raf(cb);
+else window.addEventListener('load', cb);
+</script>
+
+</body>
+</html>
