@@ -16,3 +16,12 @@ class Impression(models.Model):
 
     def __str__(self):
         return self.comment
+
+class Device(models.Model):
+
+    id=models.IntegerField("id",primary_key=True)
+    maker=models.CharField("maker",max_length=255)
+    name=models.CharField("name",max_length=255)
+
+    def __str__(self):
+        return self.name
